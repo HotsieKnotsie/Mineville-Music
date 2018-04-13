@@ -187,4 +187,4 @@ function play(guild, song) {
 }
 
 
-client.login( token );
+client.login(procces.env.BOT_TOKEN);
