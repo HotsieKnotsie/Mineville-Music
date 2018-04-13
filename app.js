@@ -186,5 +186,14 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`🎶 Ik speel nu: **${song.title}**`);
 }
 
+if (command === 'helpmusic') {
+	let helpmusicembed = new Discord.RichEmbed()
+	.setDescription("Help pagina music")
+	.setColor("#FF9900")
+	.addField("Commands", "m!play [nummer] - Laat een nummer afspelen.\nm!queue - Bekijk de liedjes die komen.");
+	
+	return message.channel.send(helpmusicembed);
+}
+
 
 client.login(process.env.BOT_TOKEN);
